@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
+    <title>Job</title>
+    <style>
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        body{
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Testing Unitario Trabajador</h1>
+        <h3>Precision de alertas</h3>
+        <hr>
+
+        <!--
+        <img id="image" src="">
+        <input type="file" onchange="encodeImageFileAsURL(this)" />
+        
+        <button type="button" onclick="create();" class="btn btn-primary">
+            CREATE</button>
+        -->
+        <button type="button" onclick="read_all();" class="btn btn-primary">
+            READ-ALL</button>
+
+            <br>
+            
+            <div style="float: right;">
+                    <!--------- INI LOGIN --------->
+                    <h4>login</h4>
+                    <input id="user" value="12345678" placeholder="user" type="text">
+                    <input id="pass" value="12345678" placeholder="pwd" type="text">
+                    <br>
+                    <button onclick="login()">LOGIN</button>
+                    <br>
+                    <input type="text" id="token" >
+                    <input type="text" id="code">
+                    <br>
+                    <!--------- FIN LOGIN --------->
+                    <!--------- INI ADD ALERTA --------->
+                           <div class="col-3 bg-light-part">
+                               <input type="text" id="trabajo" value="Cosina" name="trabajo" class="form-control">
+                               <input type="text" id="modalidad" value="Cama afuera" name="modalidad"
+                                   class="form-control">
+                               <input type="text" id="ciudad" value="La Paz" name="ciudad" class="form-control">
+                               <button onclick="add_alert(trabajo.value,modalidad.value,ciudad.value);">ADD
+                                   ALERTA NOTIFY</button>
+                           </div>
+                    <!--------- FIN ADD ALERTA --------->
+     </div>
+        <div class="row" >
+            <div class="col">
+
+            </div>
+            <div class="col-8">
+            <table border="1"  >
+                <thead>
+                    <tr>
+                    <td>FOTO</td>
+                    <td>NOMBRE</td>
+                    <td>ALERTAS NOTIFY</td>
+                    <td>POST</td>
+                    <td>USUARIO</td>
+                    <td>PASSWORD</td>
+                    <td>ACT</td>
+                </tr>
+                <tbody id="fila">
+                    <tr>
+                        <td><img src=""></td>
+                        <td>NOMBRE</td>
+                        <td>ALERTAS</td>
+                        <td>POSTULACION</td>
+                        <td>USUARIO</td>
+                        <td>PASSWORD</td>
+                    </tr>
+
+                </tbody>
+            </thead>
+            </table>
+        </div>
+        </div>
+
+   
+
+
+        <hr>
+
+  
+
+
+
+
+
+
+
+
+
+        <script src="trabajador.js"></script>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="jquery.js" >
+        </script>
+<!--
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+-->
+        </script>
+    </div>
+</body>
+
+</html>

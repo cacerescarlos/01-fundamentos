@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Fundamentos</h1>
+<style>
+    img{
+        width:160px;
+        height: 160px;
+    }
+    </style>
+
+        <img id="image" src=""  >
+        <input type="file" onchange="encodeImageFileAsURL(this)" />
+
+
+
+
+        <button type="button" onclick="create_empleador();" class="btn btn-primary">
+        CREATE EMPLEADOR</button>
+
+        <button type="button" onclick="read_empleador();" class="btn btn-primary">
+            READ-ALL EMPLEADOR</button>
+
+
+        <div class="container" border="1">
+            <input type="text" value="69056658" name="user" id="user">
+            <input type="text" value="9041539" name="pass" id="pass">
+            <input type="button" value="LOGIN-EMPLEADOR" onclick="login_empleador(user.value,pass.value);">
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="col-3 bg-light-part">
+                <input type="text" id="trabajo" value="Cosina" name="trabajo" class="form-control">
+                <input type="text" id="modalidad" value="Cama afuera" name="modalidad" class="form-control">
+                <input type="text" id="ciudad" value="La Paz" name="ciudad" class="form-control">
+                <button onclick="add_alert(trabajo.value,modalidad.value,ciudad.value);">ADD ALERTA</button>
+            </div>
+            <div class="col-8">
+                <h3>MIS ALERTAS</h3>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-3 bg-light-part">
+                <input value="" type="text" id="token" placeholder="token" name="token" class="form-control">
+                <input value="Cosina" type="text" id="interes_trabajo_aviso" placeholder="interes_trabajo_aviso" name="interes_trabajo_aviso" class="form-control">
+                <input value="Cama afuera" type="text" id="modalidad_trabajo_aviso" placeholder="modalidad_trabajo_aviso" name="modalidad_trabajo_aviso" class="form-control">
+                <input value="La Paz" type="text" id="dpto_trabajo_aviso" placeholder="dpto_trabajo_aviso" name="dpto_trabajo_aviso" class="form-control">
+                <input value="2000" type="text" id="sueldo_aviso" placeholder="sueldo_aviso" name="sueldo_aviso" class="form-control">
+                <input value="Cosinero para un restaurante, con o sin experiencia" type="text" id="descripcion_trabajo_aviso" placeholder="descripcion_trabajo_aviso" name="descripcion_trabajo_aviso" class="form-control">
+                <input value="false" type="text" id="pago_aviso" placeholder="pago_aviso" name="pago_aviso" class="form-control">
+
+                <button onclick="create_aviso();">PUBLICAR AVISO</button>
+            </div>
+            <div class="col-8">
+                <h3>MIS AVISOS</h3>
+                <button onclick="readAll_aviso();">MOSTRAR AVISOS</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="empleador.js"></script>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
