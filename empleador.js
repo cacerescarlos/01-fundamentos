@@ -1,6 +1,7 @@
-const api = 'http://192.168.0.13:4800/api/mihogar/empleador';
-const api_aviso = 'http://192.168.0.13:4800/api/mihogar/aviso';
-const api_config = 'http://192.168.0.13:4800/api/dashboard';
+const ip = 'http://192.168.1.11:4800';
+const api = ip + '/api/mihogar/empleador';
+const api_aviso = ip + '/api/mihogar/aviso';
+const api_config = ip + '/api/dashboard';
 var token;
 var empleador;
 // CREATE EMPLEADOR
@@ -192,3 +193,70 @@ function create_aviso() {
 
 }
 // ==================================================================
+
+/**
+ *
+ let t = [{
+         interes_trabajo_trabajador: 'Trabajo de Hogar',
+         modalidad_trabajo_trabajador: 'Cama adentro',
+         dpto_trabajo_trabajador: 'Santa Cruz',
+     },
+     {
+         interes_trabajo_trabajador: 'Trabajo de Hogar',
+         modalidad_trabajo_trabajador: '',
+         dpto_trabajo_trabajador: 'La Paz',
+     },
+     {
+         interes_trabajo_trabajador: 'Jardinero',
+         modalidad_trabajo_trabajador: '',
+         dpto_trabajo_trabajador: 'La Paz',
+     }
+ ];
+
+ var arr = [];
+ var aux = [];
+
+ var empleadorNoty = [];
+
+ var alers = {
+     t: [],
+     m: [],
+     c: []
+ }
+
+ for (const item of t) {
+     alers.t.push(item.interes_trabajo_trabajador);
+     alers.m.push(item.modalidad_trabajo_trabajador);
+     alers.c.push(item.dpto_trabajo_trabajador);
+ }
+ //console.log(alers);
+
+
+
+
+ Aviso.find({
+     "interes_trabajo_aviso": {
+         $in: alers.t
+     },
+     "modalidad_trabajo_aviso": {
+         $in: alers.m
+     },
+     "dpto_trabajo_aviso": {
+         $in: alers.c
+     }
+ }).then(avisos => {
+
+     avisos.forEach((aviso) => {
+         empleadorNoty.push(aviso.id);
+     })
+     console.log(empleadorNoty);
+     arr.push(empleadorNoty);
+
+     return res.status(200).json({
+         data: arr,
+         total: arr.length,
+         message: 'OK'
+
+     });
+ })
+ */

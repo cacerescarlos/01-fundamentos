@@ -32,7 +32,7 @@ sumarUno( 5 )
     .then( sumarUno )
     .then( nuevoNumero => {
         console.log(nuevoNumero);
-    })
+    }) 
     .catch( error => {
         console.log('ERROR EN PROMESA');
         console.log(error);

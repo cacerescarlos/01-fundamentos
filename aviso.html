@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
+    <title>Aviso</title>
+    <style>
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        body {
+            background: black;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Testing Unitario Aviso</h1>
+        <h3>Precision de publicación</h3>
+        <hr>
+
+        <button type="button" onclick="read_all_aviso();" class="btn btn-primary">
+            READ-ALL-AVISO</button>
+        <br>
+   <!--------- INI LOGIN --------->
+   <h4>login</h4>
+   <input id="user" value="70979210" placeholder="user" type="text">
+   <input id="pass" value="3174243" placeholder="pwd" type="text">
+   <br>
+   <button onclick="login_trab()">LOGIN</button>
+   <br>
+   <input type="text" id="token">
+   <input type="text" id="code">
+   <br>
+   <!--------- FIN LOGIN --------->
+
+      
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-8">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>CODE</td>
+                            <td>SE BUSCA</td>
+                            <td>EMPLEADOR</td>
+                            <td>ACTION</td>                            
+                        </tr>
+                    <tbody id="avisos">
+                        <tr>
+                             <td>0</td>
+                             <td>0</td>
+                             <td>0</td>
+                             <td>0</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="aviso.js"></script>
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="jquery.js">
+        </script>
+        <!--
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+-->
+        </script>
+    </div>
+</body>
+
+</html>
